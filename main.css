@@ -204,7 +204,7 @@ main{
     position: absolute;
     width:140px;
     color: #FFFFFF;
-    background: #B50000;
+    background: #c0392b;
     height: 35px;
     line-height: 35px;
     text-align: center;
@@ -212,7 +212,11 @@ main{
     border-radius: 6px; 
     line-height: 20px;
     margin-left: 10px;
-    z-index: 99999;       
+    z-index: 99999; 
+    font-family: 'Open Sans';
+    font-size: 16px;
+    padding: 10px 5px 0px 5px; 
+ 
 } 
   
 .tooltip span:after {
@@ -222,7 +226,7 @@ main{
     right: 100%;
     margin-top: -8px;
     width: 0; height: 0;
-    border-right: 8px solid #B50000;
+    border-right: 8px solid #c0392b;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
 } 

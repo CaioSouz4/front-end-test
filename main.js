@@ -62,7 +62,7 @@ function validateMessage(){
     var words = countWords(message);   
     console.log(message)
     if(message.length < 20 || words < 4){  
-        showTooltipMessage('A mensagem deve conter pelo menos 4 palavras e 20 caracteres', 200);       
+        showTooltipMessage('A mensagem deve conter pelo menos 4 palavras e 20 caracteres', 220);       
         document.getElementById("textarea").style.border = 'solid 2px red';
         return false;
     } else {
@@ -121,7 +121,7 @@ function showTooltipMessage(error, sizeTooltip) {
     var tooltip = document.getElementById('tooltipMessageError');       
     tooltip.style.opacity =  1;
     tooltip.style.width =  sizeTooltip +'px';
-    tooltip.style.height =  '70px';
+    tooltip.style.height = '70px';
     tooltip.style.visibility = 'visible';
     tooltip.style.marginBottom = "-.5em";  
     tooltip.textContent = error;
