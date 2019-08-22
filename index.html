@@ -3,12 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,700i&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-
+    <container id="container">
+        <header>
+            <img src="assets/06-LOGO.png" alt="Logo.png">
+        </header>
+        <aside>           
+            <container id="containerGrid">
+                <form id="form" onsubmit='validateMyForm()'>
+                    <div id="slogan">
+                        <h1>Vem tomar um café com a gente</h1>
+                        <span id="sendSucess">Sua mensagem foi enviada com sucesso</span>
+                    </div>
+                    <div id="inputs">
+                        <div id="name" class="tooltip">
+                            <input id="inputName" class="input-style" type="text" placeholder="Nome" onblur='validateName()'>
+                            <span id="tooltipNameError"></span> 
+                        </div>
+                        <div id="email" class="tooltip"> 
+                            <input id="inputEmail" class="input-style" type="email" placeholder="Email" onblur='validateEmail()'>
+                            <span id="tooltipEmailError"></span>                                 
+                        </div>
+                        <div id="message" class="tooltip">
+                            <textarea id="textarea" placeholder="Mensagem" onblur='validateMessage()'></textarea>
+                            <span id="tooltipMessageError"></span>  
+                        </div>
+                        <div id="buttonSend">
+                            <button id="buttonForm" type="button" onclick='messageSend()'>ENVIAR</button>
+                        </div>
+                    </div>  
+                </form>
+            </container>
+        </aside>
+        <main>            
+        </main>
+    </container>
     <script src="main.js"></script>
 </body>
 </html>
